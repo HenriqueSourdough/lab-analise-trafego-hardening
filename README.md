@@ -27,3 +27,11 @@ Este repositório documenta um laboratório prático focado em auditoria de rede
 Execução de varredura furtiva contra a superfície de ataque do gateway:
 ```bash
 sudo nmap -sS -sV -p 21,22,23,80,135,139,445,3389 10.0.2.1
+
+**Mapeamento de Portas e Serviços:**
+
+| Porta / Protocolo           | Estado       | Serviço Mapeado                         |
+| :---                        | :---         | :--                                     |
+| `135/tcp`                   | **Open**     | msrpc (Microsoft Windows RPC)           |
+| `445/tcp`                   | **Open**     | microsoft-ds (SMB)                      |
+| `21, 22, 23, 80, 139, 3389` | **Filtered** | Bloqueadas por Firewall Intermediário   |
