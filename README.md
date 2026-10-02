@@ -35,3 +35,10 @@ sudo nmap -sS -sV -p 21,22,23,80,135,139,445,3389 10.0.2.1
 | `135/tcp`                   | **Open**     | msrpc (Microsoft Windows RPC)           |
 | `445/tcp`                   | **Open**     | microsoft-ds (SMB)                      |
 | `21, 22, 23, 80, 139, 3389` | **Filtered** | Bloqueadas por Firewall Intermediário   |
+
+---
+
+## 📁 Estrutura de Arquivos
+
+* `README.md` - Documentação técnica detalhada do laboratório.
+* `scan_fase1.pcapng` - Evidência forense bruta contendo os pacotes capturados durante o escaneamento Nmap.
